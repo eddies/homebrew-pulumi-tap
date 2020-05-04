@@ -1,9 +1,10 @@
 class Pulumi < Formula
   desc "Cloud native development platform"
   homepage "https://pulumi.io/"
-  url "https://get.pulumi.com/releases/sdk/pulumi-v2.1.0-alpha.1588034617-darwin-x64.tar.gz"
+  url "https://github.com/pulumi/pulumi.git",
+    :branch => "feature/gcs-retries",
+    :revision => "c07e95e13445de2016a8212f47fe162879cef8f4"
   version "2.1.0-alpha.1588034617"
-  sha256 "54f412fc8e28016b7f4627b52606f6f623c02f40433b287593b68501d4852812"
 
   bottle :unneeded
 
